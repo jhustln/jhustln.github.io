@@ -16,10 +16,10 @@ timezone: America/New_York
 
 title: jhustln's blog # the main title
 
-tagline: "I love ctfs, please give me any feedback on my documentation/writeups. Discord: jhustln" # it will display as the subtitle
+tagline: "Discord: jhustln | SoundCloud: https://soundcloud.com/hellohowareyoudoingtoday" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  These are my writeups for CTFs that I do in either THM or HTB, I am still a beginner so please dm me if I get anything wrong or if there are better ways to approach certain situations.
+  
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
