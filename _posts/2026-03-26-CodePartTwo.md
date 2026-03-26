@@ -1,7 +1,7 @@
 ---
-title: test
+title: CodePartTwo HackTheBox
 date: 2026-03-26 00:00:00 +0000
-categories: [TOP_CATEGORY, SUB_CATEGORY]
+categories: [Writeups, HackTheBox]
 tags: [Red Team, Web, JavaScript, Network Enumeration, Privilege Escalation, Remote Code Execution]     # TAG names should always be lowercase
 toc: false
 ---
