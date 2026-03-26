@@ -4,4 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> UCF '28 Student that is eager to learn more about cyber, specifically web hacking (for now), if you want to chat with me about a writeup or if you want to give me advice on my approach then add my discord "jhustln", I'll make sure to respond
+> UCF '28 Student that is eager to learn more about red teaming and infrastructure. I love ctfing and I am always eager to learn new things everyday.
+
+> Topics I'm currently learning(I will try my best to update this over time): Web hacking, Networking (building my own homelab soon) and DevOps Fundamentals (k8s, Docker, Ansible, Terraform, etc.).
+
+>Topics I want to learn (DM me in Discord if you have any learning resources/tips for these): Blue teaming, Wifi hacking, Hardware hacking, and AI in hacking overall(MCPs, Automation, etc.).
