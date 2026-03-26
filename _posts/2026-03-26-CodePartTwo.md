@@ -7,7 +7,7 @@ toc: false
 media_subpath: /assets/images/
 image:
     path: CodePartTwo.png
-    alt: Logo
+    alt:
 ---
 
 im doing good
