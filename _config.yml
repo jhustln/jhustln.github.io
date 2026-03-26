@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: jhustln's blog # the main title
 
-tagline: I love ctfs, please give me any feedback on my documentation/writeups. # it will display as the subtitle
+tagline: I love ctfs, please give me any feedback on my documentation/writeups. Discord: jhustln # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   These are my writeups for CTFs that I do in either THM or HTB, I am still a beginner so please dm me if I get anything wrong or if there are better ways to approach certain situations.
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Justin Ray
+  name: jhustln
   email: justinrayarrieta@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -105,7 +105,7 @@ avatar: /assets/images/pfp.png
 social_preview_image: assets/lib/Screenshot 2026-01-23 221735.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
-toc: true
+toc: false
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
