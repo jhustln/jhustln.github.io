@@ -6,7 +6,7 @@ tags: [Red Team, Web, JavaScript, Network Enumeration, Privilege Escalation, Rem
 toc: false
 media_subpath: /assets/images/
 image:
-    path: CodePartTwoLogo.png
+    path: CodePartTwo.png
     alt: Logo
 ---
 
