@@ -4,7 +4,6 @@ date: 2026-03-26 00:00:00 +0000
 categories: [Writeups, HackTheBox]
 description: HackTheBox Easy Linux Machine
 tags: [Red Team, Web, JavaScript, Network Enumeration, Privilege Escalation, Remote Code Execution, Easy]     # TAG names should always be lowercase
-toc: true
 media_subpath: /assets/images/
 image:
     path: CodePartTwo.png
@@ -67,6 +66,7 @@ import json
 js2py.disable_pyimport()
 ...
 ```
+{: file="app/app.py" }
 
 As we can also see, it is calling `js2py.disable_pyimport()` which stops JavaScript code from escaping this environment. However, there exists a vulnerability in the implementation of a global variable inside `js2py`, which ultimately lets an attacker obtain RCE (Remote Code Execution).
 
@@ -130,6 +130,7 @@ class User(db.Model):
     password_hash = db.Column(db.String(128), nullable=False)
 ...
 ```
+{: file="app/app.py" }
 
 The users.db database is located in the folder inside the app directory.
 
@@ -178,6 +179,7 @@ repos:
       - /home/app/app/
 ...
 ```
+{: file="/home/marco/npbackup.conf" }
 
 The config provides us with the `repo_uri` and the `repo_password` which could allow us to make our config file to make a backup of something we are not normally allowed to touch.
 
@@ -199,6 +201,7 @@ repos:
       - /root/root.txt
 ...
 ```
+{: file="/home/marco/malicious.conf" }
 
 Run the `npbackup` binary using our malicious config file
 
