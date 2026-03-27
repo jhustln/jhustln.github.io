@@ -2,15 +2,17 @@
 title: HackTheBox | CodePartTwo Write Up
 date: 2026-03-26 00:00:00 +0000
 categories: [Writeups, HackTheBox]
+description: HackTheBox Easy Linux Machine
 tags: [Red Team, Web, JavaScript, Network Enumeration, Privilege Escalation, Remote Code Execution, Easy]     # TAG names should always be lowercase
-toc: false
+toc: true
 media_subpath: /assets/images/
 image:
     path: CodePartTwo.png
     alt:
 ---
-> [!NOTE]
+
 > Hello there, this is my first ever writeup, so please let me know if I missed anything or what I should do better for next time! This box took me about 30 minutes to complete, this writeup is mostly directed to beginners. As time goes on, I will make more detailed and in-depth writeups on Hard challenges or just vulnerabilities overall. Thank you for reading!
+{: .prompt-info }
 
 
 
@@ -25,8 +27,8 @@ First things first, we have to nmap this machine to find open ports and running 
 nmap -sC -sV -p- 10.129.232.59
 ```
 
->[!NOTE]
 > I always scan for all ports in my first nmap scan with the flag `-p-` to make sure that there aren't any hidden services lying around in a unusual port
+{: .prompt-tip }
 
 After scanning the network, nmap shows that port 22 and 8080 are open. Port 22 is using SSH and port 8080 is using HTTP.
 
@@ -101,8 +103,8 @@ console.log(n11)
 n11
 ```
 
->[!NOTE]
 > The way that this payload works is that it first uses `__getattribute__` to escape the JS sandbox. The problem with js2py is that it exposes Python internals to JS objects. Then, we climb the python object hierarchy with `__getattribute__`. After reaching the base object class (the root of all Python classes), we look for `subprocess.Popen` via subclass traversal. `subprocess.Popen` can execute arbitrary OS commands. This is a very common Python sandbox escape technique since `subprocess` is almost always loaded somewhere in memory.
+{: .prompt-info }
 
 After running the payload and opening our listener, we get a shell for user 'app'.
 ```bash
@@ -150,8 +152,8 @@ After finding marco's hash, we can crack it to obtain his password.
 
 ![Desktop View](CPTCrack.png){: width="700" height="400" }
 
->[!NOTE]
 > There are many tools that are used to crack hashes such as [JohnTheRipper](https://www.openwall.com/john/) and [Hashcat](https://hashcat.net/hashcat/), I always use [Crackstation](https://crackstation.net/) first before anything else because it is quicker and easier.
+{: .prompt-info }
 
 Once we SSH into marco with our newly obtained password we can read the user flag.
 
