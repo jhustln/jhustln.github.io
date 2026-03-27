@@ -155,7 +155,7 @@ After finding marco's hash, we can crack it to obtain his password.
 
 Once we SSH into marco with our newly obtained password we can read the user flag.
 
-![Desktop View](CPTUser.png){: width="700" height="400" }
+![Desktop View](CPCUser.png){: width="700" height="400" }
 
 Now let's look for possible privilege escalation paths that could take us to root.
 
