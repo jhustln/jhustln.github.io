@@ -14,6 +14,6 @@ I also want to stay well-rounded. Training as a Windows blue-team specialist for
 - **DevOps and cloud infrastructure**: Docker, Terraform, Ansible, and OpenStack, so I understand the environments I'm testing
 - **Blue teaming, Wi-Fi hacking, hardware hacking, and AI in security**: topics I want to explore further
 
-**Certifications I plan to pursue:** _(edit this list)_
-- OSCP
+**Certifications I plan to pursue:** 
+- CPTS
 - CompTIA Network+ / Security+
